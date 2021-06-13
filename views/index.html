@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="container">
+          <div class="text-center">
+            <a href="/" class="nav-brand text-dark">User Management System</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--/Header  -->
+    <!-- main Site -->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav">
+          <a href="/add-user">
+            <span class="text-gradient"
+              >New User<i class="fas fa-user"></i
+            ></span>
+          </a>
+        </div>
+
+        <!-- form handling -->
+        <form action="/" method="POST">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>@Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>username</td>
+                <td>example@gmail.com</td>
+                <td>Male</td>
+                <td>Active</td>
+                <td>
+                  <a href="#" class="btn border-shadow update">
+                    <span class="text-gradient"
+                      ><i class="fas fa-pencil-alt"></i
+                    ></span>
+                  </a>
+                  <a class="btn border-shadow delete">
+                    <span class="text-gradient"
+                      ><i class="fas fa-trash"></i
+                    ></span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <!-- /form handling -->
+      </div>
+    </main>
+
+    <!-- main site -->
+  </body>
+</html>
